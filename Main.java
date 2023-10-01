@@ -19,42 +19,7 @@ public class Main {
             System.out.println("Select The Target Currency By Using The Three Letter Abbreviation Listed Above:");
             String targetCurrency = scanner.next().toUpperCase();
             Currencies.convertCurrency(sourceCurrency, targetCurrency, amount);
-
-
-
-
-
-
-
-
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
+    scanner.close();
+   }
 }
