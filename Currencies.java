@@ -2,7 +2,6 @@ import java.text.DecimalFormat;
 public class Currencies {
     //All Conversion Rates Taken From The Microsoft Calculator App at 23:31 on 9/30/2023
 
-
 //Method To Convert Currency To United States Dollars As Intermediary Currency To Be Used For Final Conversion
  private static Double toUSD(String sourceCurrency, Double amount) {
         switch (sourceCurrency) {
@@ -71,8 +70,8 @@ public class Currencies {
     }
 
     public static void convertCurrency(String sourceCurrency, String targetCurrency, Double amount) {
-        double c1 = 0;
-        double c2 = 0;
+        double c1;
+        double c2;
         c1 = toUSD(sourceCurrency, amount);
         c2 = toCurrency(targetCurrency, c1);
         double conversionRate = (c2 / amount);
@@ -487,10 +486,8 @@ public class Currencies {
         } else {
             System.out.println("The Conversion Rate Is " + df.format(conversionRate));
             System.out.println("Your Amount In " + targetCurrency + " Is " + df.format(finalAmount));
-
         }
     }
 */
-
 }
 

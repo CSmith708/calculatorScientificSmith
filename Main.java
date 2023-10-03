@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 public class Main {
     public static void main(String[] args) {
 
@@ -20,6 +19,7 @@ public class Main {
             String targetCurrency = scanner.next().toUpperCase();
             Currencies.convertCurrency(sourceCurrency, targetCurrency, amount);
         }
+    System.out.println("Thank You For Using The Currency Conversion Calculator. Have A Nice Day.");
     scanner.close();
    }
 }
